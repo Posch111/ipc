@@ -125,7 +125,6 @@ int main() {
     }
 
     // Send messages over shared memory
-            fflush(stdout);
     pid_t pid = fork();
     if (pid == 0) { // Child process (client)
         Message *shared = (Message*)shared_mem;
